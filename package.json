@@ -1,0 +1,14 @@
+{
+  "name": "twittertriggers",
+  "version": "1.0.0",
+  "description": "A trigger warning system for twitter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://viralpickaxe@github.com/viralpickaxe/TwitterTriggers.git"
+  },
+  "author": "Jamie Davies <viralpickaxe@gmail.com> (http://iamjamiedavies.com/)",
+  "bugs": {
+    "url": "https://github.com/viralpickaxe/TwitterTriggers/issues"
+  },
+  "homepage": "https://github.com/viralpickaxe/TwitterTriggers#readme"
+}

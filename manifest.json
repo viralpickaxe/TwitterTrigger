@@ -1,0 +1,36 @@
+{
+  "name": "TwitterTriggers",
+  "description": "A trigger warning system for twitter",
+  "author": "Jamie Davies <viralpickaxe@gmail.com> (http://iamjamiedavies.com/)",
+  "offline_enabled": true,
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://twitter.com/*",
+        "https://twitter.com/*"
+      ],
+      "css": ["assets/css/content.css"],
+      "js": ["assets/js/jquery.min.js","assets/js/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "browser_action": {
+    "default_title": "TwitterTriggers",
+    "default_popup": "views/popup.html",
+    "default_icon": {
+      "19": "assets/icons/icon19.png",
+      "38": "assets/icons/icon38.png"
+    }
+  },
+  "manifest_version": 2
+}
