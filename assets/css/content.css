@@ -1,11 +1,17 @@
+.tt_marked {
+    position: relative;
+    padding: 1px;
+}
+
 .tt_cover {
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #3B94D9;
+    height: 99%;
+    background-color: white;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,6 +19,6 @@
 
 .tt_warning {
     text-align: center;
-    color: white;
+    color: #3B94D9;
     font-size: 1.3em;
 }

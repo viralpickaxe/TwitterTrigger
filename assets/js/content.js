@@ -27,7 +27,7 @@ window.TwitterTriggers = {
     },
     checkTweets: function(){
         TwitterTriggers.getTriggers(function(triggers){
-            $('.js-stream-item[data-item-type="tweet"]').each(function(){
+            $('.js-stream-item[data-item-type="tweet"]:not(.tt_marked)').each(function(){
                 var $this = $(this);
                 var id = this.getAttribute("data-item-id");
                 var text = $(".tweet-text",$this).text();
@@ -38,7 +38,7 @@ window.TwitterTriggers = {
                     var $cover = $('<div class="tt_cover"><div class="tt_warning">Trigger Warning!</div></div>');
                     $this.append($cover);
 
-                    $this.css({position:"relative"});
+                    $this.addClass("tt_marked");
                     console.log("tweet hidden");
                 }
             })
@@ -48,3 +48,10 @@ window.TwitterTriggers = {
 
 window.TwitterTriggers.setTriggers(["the"]);
 window.TwitterTriggers.checkTweets();
+setInterval(function(){
+    window.TwitterTriggers.checkTweets();
+},2000);
+
+window.onpopstate = function(){
+    console.log('hi')
+}
