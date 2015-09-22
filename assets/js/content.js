@@ -46,12 +46,7 @@ window.TwitterTriggers = {
     }
 }
 
-window.TwitterTriggers.setTriggers(["the"]);
 window.TwitterTriggers.checkTweets();
 setInterval(function(){
     window.TwitterTriggers.checkTweets();
 },2000);
-
-window.onpopstate = function(){
-    console.log('hi')
-}

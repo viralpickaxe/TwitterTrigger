@@ -19,22 +19,61 @@
 
 body {
     width: 400px;
-    background-color: lightgrey;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin: 0;
+
+    padding: 1em;
 }
 
-header {
-    background-color: dodgerblue;
-    color: white;
-    padding-top: 1.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    font-size: 1.5em;
-    text-align: left;
+.cf {
+    overflow: auto;
+    zoom: 1;
 }
 
-header h1 {
+ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.word {
+    display: flex;
+    float: left;
+    padding: 0.3em 0.5em;
+    color: white;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin: 0.5%;
+    border-radius: 5px;
+    background: #3B94D9;
+    width: 24%;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.msg {
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    color: #3B94D9;
+    padding: 1em;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 0.3em;
+    font-size: 1.5em;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #3B94D9;
+    color: #3B94D9;
 }
